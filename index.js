@@ -12,6 +12,9 @@ app.use(express.json());
 // In-memory user store (for simplicity)
 const users = {};
 
+
+
+
 // Helper to generate a mock token
 const generateToken = (username) => crypto.createHash('sha256').update(username + Date.now()).digest('hex');
 
